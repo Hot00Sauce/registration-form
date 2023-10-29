@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background: rgba(255, 205, 113, 0.662);
+}
+
+.form-box {
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffffffcc;
+    padding: 50px 60px 70px;
+    text-align: center;
+    border-radius: 20px;
+    outline: solid black;
+}
+.form-box h1 {
+    font-size: 30px;
+    margin-bottom: 60px;
+    color: #ea9630;
+    position: relative;
+}
+.form-box h1::after {
+    content: '';
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background: #ea9630;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.input-field {
+    background: #eaeaea;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;    
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+input {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+}
+
+.input-field > i {
+    align-items: center;
+    font-size: 23px;
+    margin-left: 10px; 
+    color: #323232;
+}
+
+form p a {
+    color: #ea9630;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+form p a:hover {
+    color: #ea9630;
+}
+
+.button-for-signin-signup {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.button-for-signin-signup > button {
+    flex-basis: 48%;
+    background: orange;
+    color: rgb(0, 0, 0);
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    /* border-color: none; */
+    outline: 0;
+    cursor: pointer;
+    transition: border 2s;
+}
+/* .button-for-signin-signup > button:hover {
+    color:rgba(0, 0, 0, 0.452);
+    background-color: rgba(255, 166, 0, 0.268);
+} */
+
+.input-group {
+    height: 280px;
+}
+
+.button-for-signin-signup button.disable {
+    background: #eaeaea;
+    color: #555;
+}
